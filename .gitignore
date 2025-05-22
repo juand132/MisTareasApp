@@ -1,0 +1,24 @@
+# Ignorar carpetas de Visual Studio
+.vs/
+
+# Archivos binarios y obj de .NET
+bin/
+obj/
+
+# Archivos de configuración locales
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de npm (Angular)
+node_modules/
+dist/
+
+# Logs y archivos temporales
+*.log
+npm-debug.log*
+
+# Archivos de sistema (macOS, Windows)
+.DS_Store
+Thumbs.db
