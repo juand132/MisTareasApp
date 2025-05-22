@@ -1,0 +1,80 @@
+/* Dar un poco de sombra y borde redondeado al contenedor principal */
+.container {
+  background-color: #f8f9fa; /* color claro suave */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Espacio y alineación para inputs en modo edición */
+input.form-control {
+  max-width: 300px;
+}
+
+/* Título tachado cuando la tarea está completada */
+.text-decoration-line-through {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Botones pequeños con espacio */
+button.btn-sm {
+  min-width: 70px;
+}
+
+/* Hover en botones para mejorar feedback */
+button.btn-sm:hover {
+  filter: brightness(0.9);
+}
+
+/* Mensaje de sin tareas estilizado */
+p.text-center.fst-italic.text-muted {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+/* Checkbox personalizado: aumentar tamaño */
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* Separación entre el checkbox y el texto */
+.d-flex.align-items-center.gap-3 > input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Al pasar el mouse sobre la lista, darle un fondo suave */
+.list-group-item:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+}
+
+/* Para el formulario de agregar tarea */
+form.input-group {
+  gap: 10px;
+}
+
+/* En móvil, inputs y botones se apilan */
+@media (max-width: 576px) {
+  form.input-group {
+    flex-direction: column;
+  }
+
+  input.form-control {
+    max-width: 100%;
+  }
+
+  button.btn-success {
+    width: 100%;
+  }
+
+  .list-group-item > div:last-child {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}

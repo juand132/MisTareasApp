@@ -1,0 +1,63 @@
+/* Fondo degradado */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card con animación suave al cargar */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  animation: fadeInScale 0.5s ease forwards;
+}
+
+/* Animación */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Placeholder más sutil */
+::placeholder {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+/* Botón con sombra y transición */
+button.btn-primary {
+  background-color: #4e54c8;
+  border-color: #4e54c8;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #3b3f99;
+  box-shadow: 0 4px 12px rgba(75, 75, 145, 0.6);
+  border-color: #3b3f99;
+  cursor: pointer;
+}
+
+/* Link de registro */
+a.text-primary:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Validación invalid feedback */
+input.is-invalid {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.invalid-feedback {
+  display: block;
+  font-size: 0.875rem;
+}
